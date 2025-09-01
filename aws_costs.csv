@@ -1,0 +1,3 @@
+regiao,compute_usd_h,ebs_gp3_usd_gb_mes,armazenamento_gb,horas_mes,custo_mensal_estimado_usd
+Leste dos EUA (N. da Virgínia) — us-east-1,0.0084,0.08,50,730,10.13
+América do Sul (São Paulo) — sa-east-1,0.0134,0.152,50,730,17.38
