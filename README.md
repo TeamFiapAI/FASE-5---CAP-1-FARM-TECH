@@ -35,7 +35,7 @@ Entrega 1 — Resumo técnico
 - **Seleção**: melhor RMSE em CV; avaliação final em holdout.  
 - **Export**: pipeline vencedor salvo como `modelo_melhor.pkl`; métricas agregadas em CSV.
 
-> **Nome do arquivo**: renomeie seu notebook para `SeuNomeCompleto_RMxxxxxx_pbl_fase4.ipynb` antes de subir ao GitHub.
+> **Nome do arquivo**: ViniciusBurchertVilasBoas_RM565395_pbl_fase4.ipynb
 
 ---
 
@@ -80,12 +80,15 @@ Inclua as capturas da calculadora no diretório `docs/` (os nomes abaixo são us
 - ![AWS us-east-1](docs/aws-us-east.png)
 - ![AWS sa-east-1](docs/aws-sa-east.png)
 
+### 🏁 Conclusão
+**Para a configuração proposta (2 vCPU, 1 GiB, 50 GB gp3, Linux, On‑Demand 100%) a região mais barata é **US East (N. Virginia — us‑east‑1)**, com custo aproximado de **US$ 10,13/mês** (~US$ 6,13 compute + US$ 4,00 EBS). Já **South America (São Paulo — sa‑east‑1)** fica por volta de **US$ 17,38/mês** (~US$ 9,78 compute + US$ 7,60 EBS). Se houver **restrição legal** para manter dados no Brasil **ou** necessidade de **latência menor** para ingestão dos sensores, escolha **sa‑east‑1**, mesmo com custo superior.
+
 ---
 
 ## 📂 Estrutura sugerida do repositório
 ```
 .
-├── SeuNomeCompleto_RMxxxxxx_pbl_fase4.ipynb
+├── ViniciusBurchertVilasBoas_RM565395_pbl_fase4.ipynb
 ├── requirements.txt
 ├── crop_yield.csv
 ├── modelo_melhor.pkl           # gerado pelo notebook
