@@ -1,33 +1,31 @@
-## FASE 5 - CAP 1 FarmTech Solutions — (IA • FIAP)
+# FASE 5 - CAP 1 FarmTech Solutions — (IA • FIAP)
 
 Este repositório contém as duas entregas obrigatórias:
 
 - **Entrega 1 (Machine Learning)**: EDA, clusterização e 5 modelos de regressão para previsão de *Yield*.
 - **Entrega 2 (Computação em Nuvem)**: estimativa de custos na AWS (On-Demand 100%) e justificativa de escolha de região.
 
-> **Dados**: `crop_yield.csv` (colunas: Crop, Precipitation (mm day-1), Specific Humidity at 2 Meters (g/kg), Relative Humidity at 2 Meters (%), Temperature at 2 Meters (C), Yield).
-
 ---
 
-## Como usar
+## Entrega 1 - Machine Learning
+▶️ [Demonstração no YouTube]() – Vídeo demonstrando o funcionamento do projeto
 
+### 1.1 Como Usar
+<a href="https://colab.research.google.com/github/TeamFiapAI/FASE-5---CAP-1-FARM-TECH/blob/main/ViniciusBurchertVilasBoas_RM565395_pbl_fase4.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+OU
+```
 1. Crie um ambiente Python 3.10+ e instale as dependências:
-   ```bash
-   pip install -r requirements.txt
-   ```
+   bash
+   > pip install -r requirements.txt
+   
 2. Abra o notebook e execute tudo.
 3. Os artefatos são gerados automaticamente durante a execução (métricas, modelo salvo e figuras).
+```
 
-> **Vídeos** (até 5 min cada, *não listado* no YouTube)  
-> - Entrega 1: Demonstração do notebook e achados.  
-> - Entrega 2: Passo a passo na Calculadora AWS + justificativa.  
-> **Cole aqui os links quando gravar:**  
-> - Entrega 1: _link_  
-> - Entrega 2: _link_
+### 1.2 Resumo técnico
+> **Dados**: `crop_yield.csv` (colunas: Crop, Precipitation (mm day-1), Specific Humidity at 2 Meters (g/kg), Relative Humidity at 2 Meters (%), Temperature at 2 Meters (C), Yield).
 
----
-
-Entrega 1 — Resumo técnico
 - **EDA**: checagem de faltantes, duplicatas, distribuição; correlação e gráficos (matplotlib).  
 - **Outliers**: detecção via **IQR** por variável.  
 - **Tendências**: **KMeans** (k otimizado por **silhouette** em 2..8) sobre condições de clima/solo, analisando o **Yield** por cluster.  
@@ -35,16 +33,16 @@ Entrega 1 — Resumo técnico
 - **Seleção**: melhor RMSE em CV; avaliação final em holdout.  
 - **Export**: pipeline vencedor salvo como `modelo_melhor.pkl`; métricas agregadas em CSV.
 
-> **Nome do arquivo**: renomeie seu notebook para `SeuNomeCompleto_RMxxxxxx_pbl_fase4.ipynb` antes de subir ao GitHub.
 
----
+## Entrega 2 - Computação em Nuvem
+▶️ [Demonstração no YouTube]() – Vídeo demonstrando o funcionamento do projeto
 
-## Entrega 2 — Estimativa de custos (AWS On-Demand 100%)
+### 2.1 Estimativa de custos (AWS On-Demand 100%)
 
 **Especificação**: 2 vCPU, 1 GiB RAM, até 5 Gbps, 50 GB EBS (gp3), Linux.  
 **Instâncias candidatas**: `t3.micro` (x86) ou `t4g.micro` (ARM).
 
-### Comparação de custos (definitivo)
+#### Comparação de custos (definitivo)
 
 | Região                              | Compute (USD/mês) | EBS 50 GB (USD/mês) | **Total (USD/mês)** |
 |------------------------------------|------------------:|--------------------:|--------------------:|
@@ -53,7 +51,7 @@ Entrega 1 — Resumo técnico
 
 > Observação: `t4g.micro` (Graviton/ARM) costuma ter **menor custo** que `t3.micro` em várias regiões. Caso a aplicação exija x86, use `t3.micro` (mesma configuração de vCPU/RAM).
 
-### Resultado resumido (valores editáveis)
+#### Resultado resumido (valores editáveis)
 | Região | Compute (USD/h) | EBS gp3 (USD/GB-mês) | Horas/mês | Armazenamento | **Custo Mensal Estimado (USD)** |
 |---|---:|---:|---:|---:|---:|
 | US East (N. Virginia) — us-east-1 | **0,0084** | **0,08** | 730 | 50 GB | **10,13** |
@@ -75,7 +73,7 @@ Entrega 1 — Resumo técnico
 - Sem restrição e buscando **menor custo** ⇒ **us‑east‑1**.  
 - Se a aplicação suportar ARM, priorize **t4g.micro** (melhor preço/desempenho).
 
-### Screenshots
+#### Screenshots
 Inclua as capturas da calculadora no diretório `docs/` (os nomes abaixo são usados pelo README):
 - ![AWS us-east-1](docs/aws-us-east.png)
 - ![AWS sa-east-1](docs/aws-sa-east.png)
@@ -98,8 +96,3 @@ Inclua as capturas da calculadora no diretório `docs/` (os nomes abaixo são us
     ├── aws-us-east.png
     └── aws-sa-east.png
 ```
-
----
-
-## 📜 Licença
-Uso acadêmico/educacional (FIAP).
