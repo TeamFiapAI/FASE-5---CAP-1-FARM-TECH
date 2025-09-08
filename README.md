@@ -5,7 +5,13 @@ Este repositório contém as duas entregas obrigatórias:
 - **Entrega 1 (Machine Learning)**: EDA, clusterização e 5 modelos de regressão para previsão de *Yield*.
 - **Entrega 2 (Computação em Nuvem)**: estimativa de custos na AWS (On-Demand 100%) e justificativa de escolha de região.
 
----
+
+#### 👥 Alunos
+- Nome: Felipe Balthazar de Almeida
+- Nome: Fernando Gomes da Silva
+- Nome: Guilherme Urbinatti
+- Nome: Vinicius Burchert Vilas Boas
+
 
 ## Entrega 1 - Machine Learning
 ▶️ [Demonstração no YouTube]() – Vídeo demonstrando o funcionamento do projeto
