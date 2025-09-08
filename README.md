@@ -32,6 +32,7 @@ OU
 
 ### 1.2 Resumo técnico
 > **Dados**: `crop_yield.csv` (colunas: Crop, Precipitation (mm day-1), Specific Humidity at 2 Meters (g/kg), Relative Humidity at 2 Meters (%), Temperature at 2 Meters (C), Yield).
+> **Nome do arquivo**: ViniciusBurchertVilasBoas_RM565395_pbl_fase4.ipynb
 
 - **EDA**: checagem de faltantes, duplicatas, distribuição; correlação e gráficos (matplotlib).  
 - **Outliers**: detecção via **IQR** por variável.  
