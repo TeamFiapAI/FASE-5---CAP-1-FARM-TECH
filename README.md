@@ -18,7 +18,7 @@ Este repositório contém as duas entregas obrigatórias:
 ▶️ [Demonstração no YouTube]() – Vídeo demonstrando o funcionamento do projeto
 
 ### 1.1 Como Usar
-<a href="https://colab.research.google.com/github/TeamFiapAI/FASE-5---CAP-1-FARM-TECH/blob/main/ViniciusBurchertVilasBoas_RM565395_pbl_fase4.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/TeamFiapAI/FASE-5---CAP-1-FARM-TECH/blob/main/ViniciusBurchertVilasBoas_RM565395_pbl_fase5.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 OU
 ```
@@ -29,6 +29,25 @@ OU
 2. Abra o notebook e execute tudo.
 3. Os artefatos são gerados automaticamente durante a execução (métricas, modelo salvo e figuras).
 ```
+```
+# Criar ambiente
+python -m venv venv
+
+# Ativar
+# Windows
+venv\Scripts\activate
+# Linux/Mac
+source venv/bin/activate
+
+# Instalar dependências
+pip install --upgrade pip
+pip install -r requirements.txt
+
+Executar
+jupyter lab
+http://localhost:8888/lab/tree/ViniciusBurchertVilasBoas_RM565395_pbl_fase5.ipynb
+```
+
 
 ### 1.2 Resumo técnico
 > **Dados**: `crop_yield.csv` (colunas: Crop, Precipitation (mm day-1), Specific Humidity at 2 Meters (g/kg), Relative Humidity at 2 Meters (%), Temperature at 2 Meters (C), Yield).
