@@ -15,7 +15,7 @@ Este repositório contém as duas entregas obrigatórias:
 
 
 ## Entrega 1 - Machine Learning
-▶️ [Demonstração no YouTube]() – Vídeo demonstrando o funcionamento do projeto
+▶️ [Demonstração no YouTube](https://youtu.be/iA28D0JxS0A) – Vídeo demonstrando o funcionamento do projeto
 
 ### 1.1 Como Usar
 <a href="https://colab.research.google.com/github/TeamFiapAI/FASE-5---CAP-1-FARM-TECH/blob/main/ViniciusBurchertVilasBoas_RM565395_pbl_fase5.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
@@ -62,7 +62,7 @@ http://localhost:8888/lab/tree/ViniciusBurchertVilasBoas_RM565395_pbl_fase5.ipyn
 
 
 ## Entrega 2 - Computação em Nuvem
-▶️ [Demonstração no YouTube]() – Vídeo demonstrando o funcionamento do projeto
+▶️ [Demonstração no YouTube](https://youtu.be/9nFQvahHRi8) – Vídeo demonstrando o funcionamento do projeto
 
 ### 2.1 Estimativa de custos (AWS On-Demand 100%)
 
